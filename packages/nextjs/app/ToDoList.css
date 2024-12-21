@@ -1,0 +1,93 @@
+/* General styling for the todo list container */
+.todo-list-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .add-task-container {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .add-task-container input {
+    width: 80%;
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-task-button {
+    background-color: #4CAF50;
+  }
+  
+  .add-task-button:hover {
+    background-color: #45a049;
+  }
+  
+  .toggle-task-button {
+    background-color: #f0ad4e;
+  }
+  
+  .toggle-task-button:hover {
+    background-color: #ec971f;
+  }
+  
+  .delete-task-button {
+    background-color: #d9534f;
+  }
+  
+  .delete-task-button:hover {
+    background-color: #c9302c;
+  }
+  
+  .task-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-description {
+    flex-grow: 1;
+    font-size: 16px;
+  }
+  
+  .task-item.completed .task-description {
+    text-decoration: line-through;
+    color: #4CAF50;
+  }
+  
+  .task-item.incomplete .task-description {
+    color: #333;
+  }
+  
